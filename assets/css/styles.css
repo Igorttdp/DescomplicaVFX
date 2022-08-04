@@ -1,0 +1,358 @@
+:root {
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #180000;
+    color: #FFFFFF;
+}
+
+.contrast {
+    color: #ff3c3c;
+}
+
+.contrast-bg {
+    background-color: #ff3c3c;
+}
+
+.section-container {
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* SECTION HOME */
+
+#home {
+    padding-top: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+header {
+    position: absolute;
+}
+
+header img {
+    max-width: 140px;
+    width: 100%;
+}
+
+#home-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+#home-text {
+    width: 900px;
+    z-index: 1;
+}
+
+#home-text h2 {
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 3rem;
+    font-weight: bolder;
+}
+
+#home-text p {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 500;
+    font-style: italic;
+}
+
+#home-text span {
+    font-weight: bold;
+}
+
+#home-content img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    max-width: 975px;
+    width: 100%;
+}
+
+/* SECTION PROJECTS */
+
+#projects {
+    max-width: 75%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+.sections-spans {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.projects-container img {
+    max-width: 435px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project-card {
+    width: 435px;
+    height: 435px;
+    border-radius: 20px;
+}
+
+.guarantees {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.g {
+    width: 225px;
+    text-align: center;
+}
+
+.g h3 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.g p {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+}
+
+.guarantess-img-bg {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1em;
+}
+
+/* SECTION EM */
+#EM {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+/* SECTION EVOLUTION */
+
+#evolution {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#evolution-span {
+    padding: 1rem 7rem;
+}
+
+#evolution-text p {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+#evolution-text p:nth-child(1) {
+    margin: 3rem 0;
+}
+
+/* SECTION MODULES */
+
+#modules {
+    color: #000000;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#modules h4 {
+    font-size: 2rem;
+}
+
+#modules p {
+    font-size: 1.5rem;
+}
+
+#modules-span {
+    color: #FFFFFF;
+    padding: 1rem 6rem;
+}
+
+.modules-container {
+    display: flex;
+    justify-self: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 4rem
+}
+
+.module {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    padding: 1%;
+    transition: all .3s;
+}
+
+.module:hover {
+    color: #FFFFFF;
+    background-color: #ff3c3c;
+    transition: all .3s;
+}
+
+.module-title {
+    display: flex;
+}
+
+.module-title span {
+    margin-right: 1rem;
+}
+
+/* SECTION INVESTMENT */
+
+#investment {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+#investment-span {
+    padding: 1rem 4rem;
+}
+
+#investment h2 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+}
+
+#investment p {
+    font-size: clamp(1.4rem, 3.5vw, 1.7rem);
+}
+
+.plan-spec {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#investment-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card-plan {
+    width: 550px;
+    height: 650px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.plan-spec {
+    padding: 3.5rem 3.5rem 0 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.spec {
+    display: flex;
+    flex-flow: column nowrap;
+    line-height: 0.9;
+}
+
+.spec span:nth-child(1) {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: bold;
+}
+
+.spec span:nth-child(2) {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.total-price {
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: bold;
+}
+
+hr {
+    size: 1px solid #000000;
+}
+
+.benefits {
+    padding: 2.5rem 3.5rem 0 3.5rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.benefits ul li {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.get {
+    display: block;
+    border: 3px solid transparent;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+    text-decoration: none;
+    background-color: #ff3c3c;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.get:hover {
+    border-color: #180000;
+    transition: all .3s;
+}
+
+footer {
+    max-height: 40vh;
+}
+
+footer div:nth-child(1) {
+    background-color: #ff3c3c;
+    width: 100%;
+    height: 30vh;
+}
+
+footer div:nth-child(2) {
+    height: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
