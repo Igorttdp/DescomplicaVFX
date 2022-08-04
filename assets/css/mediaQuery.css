@@ -10,7 +10,7 @@
 }
 
 @media (max-width: 1800px) {
-    .projects-container img {
+    .projects-container video {
         width: 30%;
     }
 
@@ -78,7 +78,7 @@
         align-items: center;
     }
 
-    .projects-container img {
+    .projects-container video {
         width: 100%;
         margin: 5rem 0;
     }
